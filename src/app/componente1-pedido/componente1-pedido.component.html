@@ -1,0 +1,14 @@
+
+<form [formGroup]="pedidoFormulario" #Formformulario="ngForm" (ngSubmit)="alta()">
+
+    <label for="color">IdCliente </label>
+    <input type="number" formControlName="idcliente"><br>
+    <label for="velocidad">Formadepago: </label>
+    <input type="string" formControlName="formadepago"><br>
+    <label for="platos">Direccion: </label>
+    <input type="string" formControlName="direccion"><br>
+    
+    
+    <button type ="button" [routerLink]="['/detalle', this.auxpedido.idpedido]" >Detalle</button>
+    <button type="submit" value="Alta" routerLink="" >Alta</button></form>
+    <router-outlet></router-outlet>

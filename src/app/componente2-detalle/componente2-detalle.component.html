@@ -1,0 +1,7 @@
+<form [formGroup]="detalleFormulario" (ngSubmit)="alta()">
+    <label for="marca">Idproducto: </label>
+    <input type="number" formControlName="idproducto" ><br>
+    <label for="color">cantidad </label>
+    <input type="number" formControlName="cantidad"><br>
+    
+    <button type="submit" >Enviar</button> </form>
